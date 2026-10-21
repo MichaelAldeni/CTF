@@ -1,0 +1,14 @@
+msg1 = '03f2794833cf53f9dcc2206609fd9c3b27269f7b8f38c79301db2f3ac2c764ab3ac0d7ad075ba191598664241d3d6e7ca113276612cbe476bf7ec544564dad'
+msg2 = '1eee3b1b7cd753abd18b3e6a44fd913a3d6f853ddb29cdc640de2d3cd39369b47f8dd9a0420fa8d4148a73321d7a643af40e3a7a03cfe53ab570dc4e5f5aa3fa01fe7df7cd7986e15b31bafccbc4563160a1' 
+msg3 = '3def6f1c7cc25eb8c6cc28234cec9e37272c843a8931c1c705db6c3dc19369b33ac0d7b94e48a09a1883202c196e727be605737d198ae876ab76cc0c4757e2fa4ea773eccd7f86f91e30bbf8c1c65278'
+msg4 = '35ef684828c957ad88c7226c42fedd2d662188349670d6dc40c8223dd3db78a97f90ddb95440a7da59ac43082866752ab13f3e2019d3d622ed7a865f1242'
+
+def sxor(b1, b2):
+    return bytes(a ^ b for a, b in zip(b1, b2))
+
+# decode hex strings to bytes
+b1 = bytes.fromhex(msg1)
+b2 = bytes.fromhex(msg2)
+
+s3 = sxor(b1, b2)
+print('xor (hex):', s3.hex())

@@ -2,9 +2,10 @@
 *.jpeg
 *.i64
 *.zip
+*.jpg
 
-./olicyber/bin
-./olicyber/preliminary
-./hackTheBox/rev
-./CyberChallenge/.venv
-./CyberChallenge/rev/bin
+/olicyber/bin
+/olicyber/rev/preliminary
+/hackTheBox/rev
+/CyberChallenge/.venv
+/CyberChallenge/rev/bin
