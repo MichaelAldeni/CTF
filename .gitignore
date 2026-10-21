@@ -1,0 +1,10 @@
+*.png
+*.jpeg
+*.i64
+*.zip
+
+./olicyber/bin
+./olicyber/preliminary
+./hackTheBox/rev
+./CyberChallenge/.venv
+./CyberChallenge/rev/bin
