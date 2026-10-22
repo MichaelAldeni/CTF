@@ -4,8 +4,10 @@
 *.zip
 *.jpg
 
-/olicyber/bin
+/olicyber/rev/bin
 /olicyber/rev/preliminary
 /hackTheBox/rev
 /CyberChallenge/.venv
 /CyberChallenge/rev/bin
+
+.key.txt
