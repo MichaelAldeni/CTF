@@ -9,5 +9,6 @@
 /hackTheBox/rev
 /CyberChallenge/.venv
 /CyberChallenge/rev/bin
+/tryHack/rev/bin
 
 .key.txt
