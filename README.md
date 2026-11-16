@@ -11,3 +11,4 @@ A curated collection of exploit scripts, reverse engineering notes, and technica
 | Platform / Event | Challenge | Category | Key Techniques / Vulnerabilities | Solution |
 | :--- | :--- | :--- | :--- | :--- |
 | **OliCyber** | `emergency-call` | Pwn | Stack Buffer Overflow, Custom ROP Chain, `execve` Syscall, Register Manipulation (`XOR`) | [Write-up & Exploit](./olicyber/rev/chall/emergency-call) |
+| **OliCyber** | `readdle` | Pwn | Arbitrary code execution, shellcode injection | [Write-up & Exploit](./olicyber/rev/chall/readdle) |
